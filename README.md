@@ -14,27 +14,27 @@ AWS Cloud Lab Environments with Marking Accelerator (V1) has received
 - Gold Award - Hong Kong ICT Awards 2014: Best Student Invention (College & Undergraduates) Award by Hong Kong Government.
 - APICTA 2015 - Merit Award (Tertiary Student Project)
 
-###Project Details and Design
+### Project Details and Design
 https://www.linkedin.com/pulse/aws-cloud-lab-one-more-real-educational-use-case-part-wong
-###Architecture
+### Architecture
 https://www.linkedin.com/pulse/aws-cloud-lab-one-more-real-educational-use-case-part-wong-1
 
 (Marking Accelerator has moved to a new project. )
 
-##Creator
+## Creator
 Mr. Cyrus Wong, R&D Coordinator (Data Scientist & AWS certified Professional) of Cloud Innovation Centre - IVE (Lee Wai Lee) - Department of Information Technology, and the AWS All 7 Certified Community Hero of Hong Kong.
 
 Linkedin 		https://hk.linkedin.com/in/cyruswong
 
 AWS Community Hero https://aws.amazon.com/tw/heroes/asia-pacific/cyrus-wong/
 
-##How to setup and configure
+## How to setup and configure
 
 the AWS Cloud Lab Project in Window Platform (All tools are platform independent!)
 
-##Deployment
+## Deployment
 
-###Download and Install build tools
+### Download and Install build tools
 
 AWS CLI
 Node.js 4.4.5
@@ -59,7 +59,7 @@ node deployment.js
 Please refer to the next section, upload Class Name List to userListS3Bucket. 
 Configuration
 
-##System Configuration - deployment.js
+## System Configuration - deployment.js
 
 You have to update const configure = {.....}, and it will save to the DynamoDB table "configure".
 - "projectId": "awscloudlab" (Don't change it)
@@ -80,7 +80,7 @@ SMTP
 - "smtpPassword": "SMTP Password"
 
 
-##Course Data
+## Course Data
 
 - calendar (Save Teacher's calendar)
 - teacher - Teacher email, and must match course table - teacher.
@@ -96,7 +96,7 @@ labStorageSnapshotId - Snapshot ID, and it must be in region attribute. It will 
 continue - true, It will use the end lab ami for the second lab! imageId will only be used in the first lab.
 share - ["imageId", "labMaterialSnapshotId", "labStorageSnapshotId", "endLabAmi"] define what can share to students.
 
-##Class Name List 
+## Class Name List 
 
 3 columns, and please use the sample excel 
 email, role (teacher or student), and awsAccount (Student AWS account number for sharing.)
